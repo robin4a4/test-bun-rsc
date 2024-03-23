@@ -16,3 +16,4 @@ ENV NODE_ENV production
 CMD ["bun", "run", "deploy"]
 
 EXPOSE 3000
+EXPOSE 3001
