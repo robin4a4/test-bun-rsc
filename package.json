@@ -20,7 +20,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "bun-rsc": "0.0.7"
+    "bun-rsc": "0.0.8"
   },
   "version": null
 }
