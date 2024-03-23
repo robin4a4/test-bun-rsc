@@ -6,7 +6,7 @@
     "serve:rsc": "bun-rsc serve-rsc",
     "serve:ssr": "bun-rsc serve-ssr",
     "build": "bun-rsc build",
-    "deploy": "MODE=production bun run build && MODE=production bun run serve:ssr"
+    "deploy": "MODE=production bun run build && concurrently 'MODE=production bun-rsc serve-rsc' 'MODE=production bun-rsc serve-ssr'"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
