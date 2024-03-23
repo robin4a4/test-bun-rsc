@@ -1,7 +1,6 @@
 {
   "name": "example-basic-tailwind",
   "type": "module",
-  "private": true,
   "scripts": {
     "dev": "bun-rsc dev",
     "serve:rsc": "bun-rsc serve-rsc",
