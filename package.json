@@ -1,0 +1,27 @@
+{
+  "name": "example-basic-tailwind",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun-rsc dev",
+    "serve:rsc": "bun-rsc serve-rsc",
+    "serve:ssr": "bun-rsc serve-ssr",
+    "build": "bun-rsc build",
+    "deploy": "MODE=production bun run build && concurrently 'bun run serve:rsc' 'bun run serve:ssr'"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "bun-types": "latest",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "@types/react": "18.2.37",
+    "@types/react-dom": "18.2.15"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "bun-rsc": "0.0.5"
+  },
+  "version": null
+}
